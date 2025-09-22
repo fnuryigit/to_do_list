@@ -1,0 +1,155 @@
+/* ===============================
+   Body ve Genel Ayarlar
+   =============================== */
+body {
+  background-color: #f0f2f5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===============================
+   Üst Bölüm: Başlık + Input + Buton
+   =============================== */
+.header-container {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 40px 20px 60px 20px;
+  color: #fff;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header-container h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Input ve Ekle Butonu */
+.input-group {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.input-group button {
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  background-color: #ff5f6d;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.input-group button:hover {
+  background-color: #ffc371;
+  transform: translateY(-2px);
+}
+
+/* ===============================
+   Liste Öğeleri
+   =============================== */
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, background 0.2s;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.list-group-item:hover {
+  transform: translateY(-3px);
+  background-color: #e0e7ff;
+}
+
+/* Görev tamamlandığında */
+.done {
+  background-color: #ffc371;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: line-through;
+  transform: scale(1.02);
+}
+
+/* Silme butonu */
+.list-group-item button {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  transition: all 0.2s ease;
+}
+
+.list-group-item button:hover {
+  background-color: #ff8787;
+  transform: scale(1.1);
+}
+
+/* ===============================
+   Toast Bildirim
+   =============================== */
+.toast-container {
+  z-index: 9999;
+}
+
+.toast {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.toast-header {
+  background-color: #6a11cb;
+  color: #fff;
+  font-weight: bold;
+  border-bottom: none;
+}
+
+.toast-body {
+  font-size: 0.95rem;
+}
+
+/* ===============================
+   Responsive Ayarlar
+   =============================== */
+@media (max-width: 576px) {
+  .header-container h1 {
+    font-size: 2rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group button {
+    width: 100%;
+  }
+
+  .list-group-item {
+    font-size: 1rem;
+  }
+}

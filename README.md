@@ -34,3 +34,6 @@ Bu proje, **JavaScript, HTML ve CSS** kullanılarak yapılmış modern bir To Do
 
 ---
 
+Canlı linke buradan ulaşabilirsiniz:
+
+ https://fnuryigit.github.io/to_do_list/

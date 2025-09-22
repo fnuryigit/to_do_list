@@ -11,7 +11,7 @@ Bu proje, **JavaScript, HTML ve CSS** kullanılarak yapılmış modern bir To Do
 
 ## Görseller
 
-![Modern To Do List](./images/screenshot.png)
+![Modern To Do List](./images/list.png)
 
 
 ---
